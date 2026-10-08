@@ -1,0 +1,32 @@
+# --- Environment / secrets ---
+.env
+*.env
+!.env.example
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# --- Node / frontend ---
+node_modules/
+dist/
+.vite/
+
+# --- Docker ---
+*.log
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Alembic (keep migrations, ignore local sqlite test artifacts) ---
+*.sqlite3
+
+# --- Uploaded attachment files (never commit citizen-submitted evidence) ---
+backend/uploads/
+!backend/uploads/.gitkeep
